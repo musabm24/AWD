@@ -1,5 +1,5 @@
 <?php
-
+// small comment
 namespace App\Models;
 
 use CodeIgniter\Model;
