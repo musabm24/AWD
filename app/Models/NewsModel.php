@@ -22,4 +22,11 @@ class NewsModel extends Model
 
         return $this->where(['slug' => $slug])->first();
     }
+
+    public function searchNews($search)
+    {
+        return $this->like('title', $search)->findAll();
+    }
+
+    
 }
